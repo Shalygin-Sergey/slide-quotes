@@ -23,7 +23,20 @@ function sliderFunction() {
     '#a626aa', 
     '#6639b7',
     '#aea400', 
-    '#ff6319'
+    '#ff6319',
+    '#DC143C',
+    '#DB7093',
+    '#FFA500',
+    '#9932CC',
+    '#483D8B',
+    '#B8860B',
+    '#2F4F4F',
+    '#191970',
+    '#4682B4',
+    '#5F9EA0',
+    '#808000',
+    '#228B22',
+    '#1E90FF'
   ];
 
   const body = document.querySelector('body');
@@ -37,6 +50,7 @@ function sliderFunction() {
       let div = document.createElement('div');
       div.classList.add('slide');
       div.style.background = colorData[0];
+      console.log(data[i]);
       if (i !== 0) div.classList.add('hide');
       let text = document.createElement('div');
       text.textContent = data[i];
